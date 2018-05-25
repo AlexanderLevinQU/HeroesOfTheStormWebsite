@@ -3,3 +3,27 @@
 	font-family: arial
 }
 
+h1, h2, li {
+	color: #555;
+}
+
+a {
+	color: blue;
+}
+
+p {
+	background: #666
+	color: white;
+	padding: 10px;
+}
+
+.secondary {
+	background: black;
+	color: #777;
+}
+
+#special {
+	background: red;
+	color: white;
+}
+
