@@ -1,10 +1,16 @@
 ﻿body {
 	background:grey;
-<<<<<<< HEAD
-	font-family: Arial
-}
-=======
-	font-family: arial
+	font-family: Arial;
 }
 
->>>>>>> 83cc8b00ed2c7bf123d00ee114e04b2859e43f7c
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding: 14px 16px;
+}
