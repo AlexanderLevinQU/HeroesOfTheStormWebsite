@@ -14,3 +14,7 @@ li {
     float: left;
     padding: 14px 16px;
 }
+li img{
+    border:solid;
+    border-color:darkslateblue;
+}
