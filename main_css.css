@@ -4,7 +4,15 @@
 }
 
 body{
-    background-color:aqua;
+    background-image:url(http://www.adriacraft.net/images/stories/news/2013/Dec/04/news_background_heroes.jpg);
+    
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*
@@ -26,7 +34,7 @@ li img{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 200px;
   position: relative;
   margin: auto;
 }
@@ -36,17 +44,40 @@ li img{
     display: none;
 }
 
+.supportslides img{
+    border:solid;
+    border-color: purple;
+}
+
 .TanksSlides {
     display: none;
 }
+
+.TanksSlides img {
+    border:solid;
+    border-color: purple;
+}
+
 .assassinslides {
     display: none;
+}
+.assassinslides img{
+    border:solid;
+    border-color: purple;
 }
 .MultiClass {
     display: none;
 }
+.MultiClass img{
+    border:solid;
+    border-color: purple;
+}
 .Specialists {
     display: none;
+}
+.Specialists img{
+    border:solid;
+    border-color: purple;
 }
 
 /* Next & previous buttons */
@@ -159,7 +190,7 @@ nav ul li a{
     color: #222;
     font-size: 14px;
     line-height: 55px;
-    padding: 0px 4px;
+    padding: 0px 14px;
     text-decoration: none;
 }
 
