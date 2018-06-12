@@ -5,6 +5,7 @@
     <link href="DeckardCounter_css.css" rel=stylesheet type="text/css">  
     <meta charset="utf-8" />
     <title>Deckard Counter</title>
+	<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
 </head>
 <body>
     <nav>
@@ -145,6 +146,9 @@
         <br />
         <br />
         <h1>Counters:</h1>
+		<input type = "button" class= "votes" onclick= "Vote(true)" value = "Vote up"> <!-- VOTE UP BUTTON -->
+		<input type = "button" class= "votes" onclick= "Vote(false)" value = "Vote down"> <!-- VOTE DOWN BUTTON -->
+		<input id= 'tbUN' type = 'text' value = '' placeholder = 'IP Address'> <input>
         <br />
         <br />
         <br />
@@ -212,5 +216,37 @@
         <br />
         <br />
     <a href="tutorial1.html"><br />Back To Main</a>
+
+
+	
+
+	<script>
+	// JSON REQUEST IN JQUERY //
+	$.ajax({
+		type: 'GET',
+		dataType: 'json',
+		url: 'http://freegeoip.net/json/?callback=?',
+		success: function(responseData) {
+			dispDat(responseData["ip"])
+		},
+		error: function(XMLHttpRequest, textStatus, errorThrown) {	
+		}
+	});
+
+	function dispDat(varDat) {
+		$('tbUN')[0].value = varDat;
+	}
+
+	var votes = 0;
+	// updates the vote count  //
+	function Vote (up) {
+		if (up == true)
+			votes++;
+		else
+			votes--;
+		document.getElementById ("votes").innerHTML = votes;
+	}
+	</script>
+
 </body>
 </html>
