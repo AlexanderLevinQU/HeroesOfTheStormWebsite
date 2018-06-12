@@ -94,10 +94,11 @@ img{
 h1{
     color:white;
 }
-#ranks li{
-    display:inline;
+
+.Ranks{
     color:white;
+    display:inline-block;
+    padding-left:1em;
     padding-right:10em;
-    padding-left: 2em;
     text-decoration:underline;
 }
