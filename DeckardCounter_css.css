@@ -1,4 +1,4 @@
-﻿*{
+﻿{
     margin: 0;
     padding: 0;
 }
@@ -6,10 +6,10 @@
 body{
     background-image:url(http://www.adriacraft.net/images/stories/news/2013/Dec/04/news_background_heroes.jpg);
     
-    /* Full height */
+    / Full height /
     height: 100%; 
 
-    /* Center and scale the image nicely */
+    / Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
