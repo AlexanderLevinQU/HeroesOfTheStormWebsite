@@ -1,13 +1,15 @@
-﻿*{
-    margin: 0px;
-    padding: 0px;
+﻿{
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-image:url(http://www.adriacraft.net/images/stories/news/2013/Dec/04/news_background_heroes.jpg);
     
-
+    / Full height /
     height: 100%; 
+
+    / Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,13 +17,11 @@ body{
 #Heading h1, h2 {
     color:white;
     clear:both;
-    display:inline-block;
+    display:inline;
 }
-
 #Heading h2{
-    padding-left:10em;
+    padding-left:20em;
 }
-
 nav{
     width: 100%;
     height: 60px;
@@ -35,7 +35,6 @@ nav p {
     line-height: 55px;
     float: left;
     padding: 0px 10px;
-    
 }
 
 nav ul{
@@ -85,8 +84,8 @@ nav ul li ul li a:hover{
 img{
     border-color:purple;
     border-style:solid;
-    margin-right:10px;
     float:left;
+    margin-right:10px;
 }
 #skills ul li{
     color: white;
@@ -96,13 +95,10 @@ h1{
     color:white;
 }
 
-.Ranks {
+.Ranks{
     color:white;
     display:inline-block;
     padding-left:1em;
     padding-right:10em;
-}
-
-.Ranks h3{
     text-decoration:underline;
 }
